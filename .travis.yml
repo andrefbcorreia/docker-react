@@ -7,3 +7,6 @@ before_install:
 
 script:
   - docker run -e CI=true andrecorreia/docker-react yarn test
+
+deploy:
+  provider: elasticbeanstalk
